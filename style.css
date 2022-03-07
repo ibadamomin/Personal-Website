@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #f0eeee;
+}
+
+h2 {
+  font-family: "PT Sans", serif;
+  color: #112e7e;
+}
+
+h3 {
+  font-family: "PT Sans", serif;
+  color: #44515a;
+  font-style: bold;
+  font-weight: bold;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  border: dotted #52616b 6px;
+  border-bottom: none;
+  width: 5%;
+  margin: 100px auto;
+}
+.heading {
+  margin: 50px auto 0 auto;
+  color: #52616b;
+  font-size: 4.625rem;
+  font-family: "Comfortaa", serif;
+}
+
+.top-paragraph {
+  color: #52616b;
+  font-size: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+}
+
+.top-container {
+  background-image: url(images/rm218-katie-13.jpg);
+  background-color: #52616b;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  border-bottom: solid 3px #52616b;
+}
+
+.middle-container {
+  width: 100%;
+}
+
+.bottom-container {
+  width: 100%;
+}
+.btn {
+  background: linear-gradient(to bottom, #1e2022 5%, #52616b 100%);
+  background-color: #1e2022;
+  border-radius: 28px;
+  border: 1px solid #c9d6df;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Courier New;
+  font-size: 15px;
+  padding: 15px 18px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #52616b 5%, #1e2022 100%);
+  background-color: #52616b;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.contact-me {
+  margin: 0;
+  width: 100%;
+}
+
+.ibad-image {
+  margin-top: 90px;
+  width: 200px;
+  position: relative;
+  border-radius: 200px;
+  background-color: #52616b;
+  border: solid 1px;
+  border-color: #52616b;
+}
+
+.closing-hr {
+  border: solid 1px;
+  width: 100%;
+  margin: 0;
+}
+
+.twitter-logo {
+  width: 25px;
+  margin: 5px 5px;
+}
+
+.github-logo {
+  width: 25px;
+  margin: 5px 5px;
+}
+
+.linkedin-logo {
+  width: 25px;
+  margin: 5px 5px;
+}
+
+.copyright-container {
+  background-color: #d0d2d4;
+  margin-top: 5px;
+  width: 100%;
+  height: 80px;
+}
