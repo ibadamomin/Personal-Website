@@ -205,8 +205,7 @@ html {
         width: 18em;
         margin-top: 50%;
         font-size: 120%;
-        /* white-space: nowrap;    
-        overflow: hidden;transform: translateY(-50%); */
+
     }
 
     .subheading {
@@ -217,5 +216,21 @@ html {
         width: 18em;
         margin-top: 15%;
         font-size: 120%;
+    }
+
+    .sub {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.822);
+        display: flex;
+        justify-content: center;
+    }
+
+    .body-text, .bullets {
+        color: rgba(255, 255, 255, 0.822);
+    }
+
+    .contact-me {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.822);
     }
 }
