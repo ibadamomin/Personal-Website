@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Courier+Prime&family=Roboto:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+/*Global*/
+
+html {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/*Width greater than 400px */
+@media (min-width: 400px){
+    body {
+        height: calc(100vh - 8em);
+        padding: 4em;
+        color: rgba(20, 219, 2, 0.75);
+        font-family: 'Courier Prime', monospace;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .line {
+        position: relative;
+        top: 50%;
+        width: 16em;
+        margin: 0 auto;
+        border-right: 2px solid rgba(20, 219, 2, 0.75);
+        font-size: 180%;
+        text-align: center;
+        white-space: nowrap;    
+        overflow: hidden;transform: translateY(-50%);
+    }
+
+    .subheading {
+        position: relative;
+        top: 50%;
+        width: 16em;
+        margin: 0 auto;
+        font-size: 180%;
+        text-align: center;
+        white-space: nowrap;    
+        overflow: hidden;
+        margin-top: 30px;
+        transform: translateY(5rem);
+        opacity: 0;
+        animation: fadeInUp 5s ease calc(5s) forwards;
+        color: antiquewhite;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 0.5rem;
+    }
+
+    .sub {
+        position: relative;
+        top: 50%;
+        width: 16em;
+        margin: 0 auto;
+        font-size: 115%;
+        text-align: center;
+        white-space: nowrap;    
+        overflow: hidden;
+        margin-top: 30px;
+        transform: translateY(5rem);
+        opacity: 0;
+        color: antiquewhite;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 0.5rem;
+    }
+
+    a {
+        position: relative;
+        top: 50%;
+        width: 16em;
+        margin: 0 auto;
+        font-size: 110%;
+        text-align: center;
+        white-space: nowrap;    
+        overflow: hidden;
+        margin-top: 40px;
+        transform: translateY(5rem);
+        opacity: 0;
+        animation: fadeInUp 5s ease calc(8s) forwards;
+        color: antiquewhite;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 0.2rem;
+        text-decoration: none;
+    }
+
+    .education {
+        margin-top: 5%;
+        animation: fadeInUp 5s ease calc(6s) forwards;
+    }
+
+    .projects {
+        animation: fadeInUp 5s ease calc(7s) forwards;
+    }
+
+    .contact {
+        animation: fadeInUp 5s ease calc(8s) forwards;
+    }
+
+    /*Education*/
+    .heading {
+        position: relative;
+        width: 7em;
+        border-right: 1px solid rgba(20, 219, 2, 0.75);
+        font-size: 180%;
+        white-space: nowrap;    
+        overflow: hidden;transform: translateY(-50%);
+    }
+
+    .body-text {
+        position: relative;
+        margin: 0 auto;
+        font-size: 110%;
+        transform: translateY(5rem);
+        opacity: 0;
+        color: antiquewhite;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 0.5rem;
+        animation: fadeInUp 5s ease calc(4s) forwards;
+    }
+
+    .bullets {
+        position: relative;
+        margin: 2% auto;
+        font-size: 110%;
+        transform: translateY(5rem);
+        opacity: 0;
+        color: antiquewhite;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 0.2rem;
+        animation: fadeInUp 5s ease calc(4s) forwards;
+     
+    }
+    
+    .next {
+        margin-top: 5rem;
+    }
+    
+    .contact-me {
+         animation: fadeInUp 5s ease calc(4s) forwards;
+    }
+    
+
+    /*Animation*/
+    .typewriter-anim{
+        animation: typewriter 4s steps(25) 1s 1  normal both,
+        blinkTextCursor 500ms steps(25) infinite normal;
+    }
+
+    .heading {
+        animation: typewriter-edu 4s steps(25) 1s 1  normal both,
+        blinkTextCursor 500ms steps(25) infinite normal;
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }   
+        to {
+            width: 16em;
+        }
+    }
+
+    /*education animation*/
+    @keyframes typewriter-edu {
+        from {
+            width: 0;
+        }   
+        to {
+            width: 7em;
+        }
+    }
+
+    @keyframes blinkTextCursor {
+        from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+        } 
+        to {
+            border-right-color: transparent;
+        }
+    } 
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Width less than 400px */
+
+@media (max-width:400px) {
+    body {
+        padding: 1em;
+        color: rgba(20, 219, 2, 0.75);
+        font-family: 'Courier Prime', monospace;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .line{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        width: 18em;
+        margin-top: 50%;
+        font-size: 120%;
+        /* white-space: nowrap;    
+        overflow: hidden;transform: translateY(-50%); */
+    }
+
+    .subheading {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18em;
+        margin-top: 15%;
+        font-size: 120%;
+    }
+}
