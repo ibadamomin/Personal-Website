@@ -188,7 +188,7 @@ html {
 
 /* Width less than 400px */
 
-@media (max-width:400px) {
+@media (max-width:500px) {
     body {
         padding: 1em;
         color: rgba(20, 219, 2, 0.75);
