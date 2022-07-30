@@ -7,7 +7,7 @@ html {
 }
 
 /*Width greater than 400px */
-@media (min-width: 400px){
+@media (min-width: 500px){
     body {
         height: calc(100vh - 8em);
         padding: 4em;
