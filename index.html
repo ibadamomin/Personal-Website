@@ -248,6 +248,28 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Only play the terminal intro animation once per browser session.
+        // On back/forward or any subsequent load, reveal content instantly.
+        (function () {
+            try {
+                if (sessionStorage.getItem('introPlayed') === '1') {
+                    document.body.classList.add('no-intro');
+                } else {
+                    sessionStorage.setItem('introPlayed', '1');
+                }
+            } catch (e) {
+                /* storage blocked — fall back to playing the animation */
+            }
+
+            // Safari/Firefox restore pages from bfcache on back/forward;
+            // make sure we treat that as a "visited" load too.
+            window.addEventListener('pageshow', function (event) {
+                if (event.persisted) {
+                    document.body.classList.add('no-intro');
+                }
+            });
+        })();
     </script>
 </body>
 </html>

@@ -176,7 +176,7 @@ main {
     margin: 0 0 1rem;
     opacity: 0;
     transform: translateY(1rem);
-    animation: fadeInUp 1.2s ease 3s forwards;
+    animation: fadeInUp 0.5s ease 1.25s forwards;
 }
 
 .hero-tag {
@@ -186,7 +186,7 @@ main {
     font-size: 1.05rem;
     opacity: 0;
     transform: translateY(1rem);
-    animation: fadeInUp 1.2s ease 3.5s forwards;
+    animation: fadeInUp 0.5s ease 1.5s forwards;
 }
 
 .hero-cta {
@@ -196,7 +196,7 @@ main {
     flex-wrap: wrap;
     opacity: 0;
     transform: translateY(1rem);
-    animation: fadeInUp 1.2s ease 4s forwards;
+    animation: fadeInUp 0.5s ease 1.75s forwards;
 }
 
 .btn {
@@ -543,8 +543,22 @@ main {
 
 /* ---------- Animations ---------- */
 .typewriter-anim {
-    animation: typewriter 3s steps(25) 0.5s 1 normal both,
+    animation: typewriter 1s steps(22) 0.2s 1 normal both,
                blinkTextCursor 500ms steps(2) infinite normal;
+}
+
+/* Revisit path: skip the terminal intro and show content instantly. */
+.no-intro .typewriter-anim {
+    animation: blinkTextCursor 500ms steps(2) infinite normal;
+    max-width: 18ch;
+}
+
+.no-intro .subheading,
+.no-intro .hero-tag,
+.no-intro .hero-cta {
+    animation: none;
+    opacity: 1;
+    transform: none;
 }
 
 @keyframes typewriter {
