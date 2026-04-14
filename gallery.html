@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery — Ibad Momin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/waveemoji.png">
+</head>
+<body>
+    <header class="topbar">
+        <a href="index.html" class="brand">ibad<span class="brand-cursor"></span></a>
+        <nav class="topnav">
+            <a href="about.html">about</a>
+            <a href="experience.html">experience</a>
+            <a href="projects.html">projects</a>
+            <a href="food.html">food</a>
+            <a href="gallery.html" class="is-active">gallery</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <p class="crumb">$ ls photos/</p>
+        <h1 class="page-title">gallery</h1>
+
+        <section class="prose">
+            <p>a few shots that stuck with me.</p>
+        </section>
+
+        <!--
+            Drop photos into /photos/ and swap the placeholders below for:
+            <figure class="shot">
+                <img src="/photos/filename.webp" alt="short description" loading="lazy">
+                <figcaption>optional caption</figcaption>
+            </figure>
+        -->
+        <section class="gallery">
+            <figure class="shot shot-empty"><span>coming soon</span></figure>
+            <figure class="shot shot-empty"><span>coming soon</span></figure>
+            <figure class="shot shot-empty"><span>coming soon</span></figure>
+            <figure class="shot shot-empty"><span>coming soon</span></figure>
+            <figure class="shot shot-empty"><span>coming soon</span></figure>
+            <figure class="shot shot-empty"><span>coming soon</span></figure>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="close">&times;</button>
+        <img class="lightbox-img" src="" alt="">
+        <p class="lightbox-caption"></p>
+    </div>
+
+    <footer class="copyright">&copy; Ibad Momin &mdash; 2026</footer>
+
+    <script>
+        (function () {
+            const box = document.getElementById('lightbox');
+            const img = box.querySelector('.lightbox-img');
+            const cap = box.querySelector('.lightbox-caption');
+            const close = box.querySelector('.lightbox-close');
+
+            document.querySelectorAll('.gallery .shot img').forEach(function (el) {
+                el.addEventListener('click', function () {
+                    img.src = el.src;
+                    img.alt = el.alt;
+                    const fig = el.closest('figure');
+                    const c = fig ? fig.querySelector('figcaption') : null;
+                    cap.textContent = c ? c.textContent : '';
+                    box.classList.add('is-open');
+                    box.setAttribute('aria-hidden', 'false');
+                });
+            });
+
+            function hide() {
+                box.classList.remove('is-open');
+                box.setAttribute('aria-hidden', 'true');
+                img.src = '';
+            }
+
+            close.addEventListener('click', hide);
+            box.addEventListener('click', function (e) { if (e.target === box) hide(); });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') hide(); });
+        })();
+    </script>
+</body>
+</html>
