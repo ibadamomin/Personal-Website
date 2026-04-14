@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ibad Momin — Software engineer, builder, entrepreneur, and home cook based in Texas.">
+    <meta name="description" content="Ibad Momin — Software engineer at Dell, founder of Fuelmarkt, M.S. in AI at UT Austin, and a serious home cook.">
     <meta name="theme-color" content="#0a0a0a">
-    <title>Ibad Momin — Software Engineer & Builder</title>
+    <title>Ibad Momin — Software Engineer, Builder & Founder</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/waveemoji.png">
 </head>
@@ -16,7 +16,7 @@
         <ul class="nav-links">
             <li><a href="#about">about</a></li>
             <li><a href="#experience">experience</a></li>
-            <li><a href="#projects">projects</a></li>
+            <li><a href="#projects">building</a></li>
             <li><a href="#kitchen">kitchen</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
@@ -26,13 +26,16 @@
         <!-- HERO -->
         <section class="hero">
             <div class="hero-inner">
-                <p class="prompt">~/ibadmomin <span class="blink">$</span></p>
+                <p class="prompt">ibad@austin <span class="blink">$</span> whoami</p>
                 <h1 class="line typewriter-anim">Hello, my name is Ibad.</h1>
-                <h2 class="subheading">Software engineer. Builder. Entrepreneur. Home cook.</h2>
-                <p class="hero-tag">Shipping products, cooking up ideas — and dinner.</p>
+                <h2 class="subheading">Software engineer. Builder. Founder. Home cook.</h2>
+                <p class="hero-tag">
+                    Software Engineer II at Dell · founder of Fuelmarkt ·
+                    M.S. in AI at UT Austin · Austin, TX.
+                </p>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn">View projects</a>
-                    <a href="/IbadMomin-Resume.pdf" class="btn btn-ghost" download>Download resume</a>
+                    <a href="#projects" class="btn">What I'm building</a>
+                    <a href="/Ibad_Momin_Resume_2026.pdf" class="btn btn-ghost" download>Download resume</a>
                 </div>
             </div>
         </section>
@@ -43,27 +46,35 @@
             <div class="about-grid">
                 <div class="about-copy">
                     <p>
-                        I'm a CS grad from <strong>The University of Texas at Dallas</strong>
-                        who likes turning rough ideas into working things — web apps,
-                        cloud tooling, side projects, and the occasional 12-hour braise.
+                        I'm a software engineer based in <strong>Austin, TX</strong>.
+                        By day I build CI/CD infrastructure, developer tools, and test
+                        automation at <strong>Dell Technologies</strong> — work that now
+                        serves 800+ engineers and underpins a $3B+ enterprise storage product.
                     </p>
                     <p>
-                        Most recently I was a <strong>Software Engineering Intern at Dell Technologies</strong>,
-                        building cloud-deployment tooling on top of Kubernetes. On the side I'm
-                        building <strong>Cause Connect</strong>, a platform that links 20K+ students
-                        and faculty with nearby non-profits and volunteering opportunities.
+                        On nights and weekends I'm building <strong>Fuelmarkt</strong>, a
+                        fuel intelligence SaaS platform for gas station operators.
+                        Next.js, Postgres, hardware integrations, and an AI agent on top
+                        of the Anthropic API. Currently onboarding our first pilot customers.
                     </p>
                     <p>
-                        When I'm not writing code I'm usually in the kitchen — South Asian classics,
-                        slow-cooked meats, and whatever recipe I'm currently obsessed with.
+                        I'm also pursuing an <strong>M.S. in Artificial Intelligence at
+                        UT Austin</strong> (2025&ndash;2027), sharpening the applied AI side of
+                        how I build.
+                    </p>
+                    <p>
+                        When I step away from the keyboard, I'm usually at the stove —
+                        cooking is the other place I get to design, iterate, and ship.
                     </p>
                 </div>
                 <aside class="stack">
                     <h3>stack</h3>
-                    <p><span class="muted">languages:</span> Python, Java, C/C++, JavaScript, SQL, Swift</p>
-                    <p><span class="muted">web:</span> React, Next.js, Node.js, Express, Firebase</p>
-                    <p><span class="muted">cloud &amp; infra:</span> AWS, GCP, Docker, Kubernetes, Terraform</p>
-                    <p><span class="muted">data:</span> PostgreSQL, MySQL, MongoDB, RabbitMQ</p>
+                    <p><span class="muted">primary:</span> Python, JavaScript, Docker, Kubernetes, Jenkins, PostgreSQL</p>
+                    <p><span class="muted">languages:</span> Python, C/C++, Java, JS, Swift, SQL, Bash</p>
+                    <p><span class="muted">web:</span> React, Next.js, Node, Express, Django, Flask</p>
+                    <p><span class="muted">ai / ml:</span> PyTorch, TensorFlow, Anthropic API, NumPy, Pandas</p>
+                    <p><span class="muted">cloud &amp; infra:</span> AWS, Azure, Terraform, CI/CD</p>
+                    <p><span class="muted">data:</span> PostgreSQL, MySQL, MongoDB, Firebase</p>
                     <p><span class="muted">kitchen:</span> cast iron, dutch oven, too many spices</p>
                 </aside>
             </div>
@@ -75,49 +86,81 @@
             <ol class="timeline">
                 <li class="timeline-item">
                     <div class="timeline-head">
-                        <h3>Software Engineering Intern · Dell Technologies</h3>
-                        <span class="dates">May 2023 — Aug 2024 · Round Rock, TX</span>
+                        <h3>Software Engineer II · Dell Technologies</h3>
+                        <span class="dates">Jan 2025 — Present · Round Rock, TX</span>
                     </div>
                     <ul>
-                        <li>Shipped cloud-deployment tooling that let clients deploy apps to public and private clouds from a single UI — cut deployment time by 25% and lifted customer satisfaction 12%.</li>
-                        <li>Containerized and orchestrated PostgreSQL and RabbitMQ with Docker and Kubernetes to improve availability.</li>
-                        <li>Researched a $100M startup's stack to design the right deployment pattern on Dell infrastructure.</li>
+                        <li>Solely designed and deployed a Python-based Slack bot adopted by 800+ engineers — replaced ad-hoc channel posts with a structured bug reporting workflow now processing 50–200 requests/month and cutting average triage time.</li>
+                        <li>Rewrote PowerStore component test suites from a legacy framework into a modernized CLI + Docker stack, improving reliability and maintainability for a flagship enterprise storage product generating <strong>$3B+ in annual revenue</strong>.</li>
+                        <li>Led migration of PowerStore test infrastructure from Jenkins to Dell's proprietary CI platform — shortening build/test times and improving release pipeline visibility org-wide.</li>
                     </ul>
                 </li>
                 <li class="timeline-item">
                     <div class="timeline-head">
-                        <h3>Development Officer · UTD Artificial Intelligence Society</h3>
-                        <span class="dates">Aug 2022 — May 2024 · UT Dallas</span>
+                        <h3>Software Engineer I · Dell Technologies</h3>
+                        <span class="dates">Jul 2024 — Jan 2025 · Round Rock, TX</span>
                     </div>
                     <ul>
-                        <li>Designed and built the AIS website in Next.js.</li>
-                        <li>Built a Coda-powered QR check-in system for <strong>HackAI 2023</strong> (500+ attendees).</li>
-                        <li>Helped run the hackathon end-to-end — logistics, workshops, and $5K in sponsorships raised.</li>
+                        <li>Rebuilt broken Jenkins CI/CD pipelines to automate daily OCP e2e operator tests, PowerStore module validation, and CSM pre-release installation checks — eliminating 2–6 hours of manual testing per day for 200+ engineers.</li>
+                        <li>Partnered with a 4-person engineering team to diagnose and resolve pipeline failures using Jenkins, Docker, Kubernetes, and shell scripting in an Agile/Scrum environment.</li>
+                    </ul>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-head">
+                        <h3>Software Engineering Intern · Dell Technologies</h3>
+                        <span class="dates">May 2023 — Aug 2023 · Round Rock, TX</span>
+                    </div>
+                    <ul>
+                        <li>Reduced server resource utilization by 20% by containerizing services with Kubernetes and Docker, eliminating environment inconsistencies across deployment targets.</li>
                     </ul>
                 </li>
             </ol>
         </section>
 
-        <!-- PROJECTS -->
+        <!-- BUILDING -->
         <section id="projects" class="section">
-            <h2 class="section-heading">&gt; projects</h2>
+            <h2 class="section-heading">&gt; building</h2>
+
+            <article class="feature">
+                <header class="feature-head">
+                    <div>
+                        <h3>Fuelmarkt <span class="tag-live">● live pilot</span></h3>
+                        <p class="feature-sub">Founder &amp; Engineer · Jan 2025 — Present · Austin, TX</p>
+                    </div>
+                </header>
+                <p>
+                    A fuel intelligence SaaS platform for gas station operators. Independent
+                    operators lose thousands in margin every year to manual, error-prone fuel
+                    procurement decisions — Fuelmarkt gives them real-time tank data, competitor
+                    pricing, and an AI agent that can place purchase orders autonomously.
+                </p>
+                <ul class="feature-list">
+                    <li>Full-stack app on <strong>Next.js, Node.js, PostgreSQL</strong>, with the <strong>Anthropic API</strong> powering the agent layer.</li>
+                    <li>Hardware integrations with <strong>Veeder-Root TLS-450+</strong> ATGs and <strong>OptConnect</strong> for tank telemetry, plus competitor retail price intelligence.</li>
+                    <li>Interviewed <strong>10+ operators</strong> and attended a national industry expo to validate PMF — pivoted from a procurement marketplace to a flat-tier SaaS model on the basis of that feedback.</li>
+                    <li>Currently onboarding <strong>2 pilot customers</strong> and shipping a Claude tool-use agent that takes decision latency on purchase orders from hours to minutes.</li>
+                </ul>
+                <p class="tags">Next.js · Node.js · PostgreSQL · Anthropic API · Veeder-Root · OptConnect</p>
+            </article>
+
+            <h3 class="subsection-heading">earlier work</h3>
             <div class="cards">
                 <article class="card">
                     <header>
                         <h3>Cause Connect</h3>
-                        <span class="dates">2024 — present</span>
+                        <span class="dates">2024</span>
                     </header>
-                    <p>Web platform linking 20K+ UTD students and faculty with nearby non-profits, donors, and volunteering opportunities. Built-in Stripe donation flow.</p>
-                    <p class="tags">React · Firebase · Node.js · Stripe · Figma</p>
+                    <p>Web platform linking UTD students and faculty with nearby non-profits, donors, and volunteering opportunities. Built-in Stripe donation flow.</p>
+                    <p class="tags">React · Firebase · Node.js · Stripe</p>
                 </article>
 
                 <article class="card">
                     <header>
                         <h3>Degree Planner</h3>
-                        <span class="dates">2024 — present</span>
+                        <span class="dates">2024</span>
                     </header>
-                    <p>Interactive planner that helps students map out their degree — visualize required courses, semester plans, and progress with charting libraries over a MySQL backend.</p>
-                    <p class="tags">MySQL · Node.js · JavaScript · Git</p>
+                    <p>Interactive planner to map out a degree — visualize required courses, semester plans, and progress over a MySQL backend.</p>
+                    <p class="tags">MySQL · Node.js · JavaScript</p>
                 </article>
 
                 <article class="card">
@@ -129,29 +172,11 @@
                     <p class="tags">Swift · iOS</p>
                 </article>
 
-                <article class="card">
-                    <header>
-                        <h3>Daily Journal</h3>
-                        <span class="dates">Spring 2022</span>
-                    </header>
-                    <p>Personal blogging app with full CRUD — write, edit, and browse entries, backed by MongoDB.</p>
-                    <p class="tags">Node.js · Express · MongoDB · EJS · Bootstrap</p>
-                </article>
-
-                <article class="card">
-                    <header>
-                        <h3>Weather App</h3>
-                        <span class="dates">Fall 2021</span>
-                    </header>
-                    <p>Type in a city, get the current weather. Consumes the OpenWeatherMap API over an Express backend.</p>
-                    <p class="tags">JavaScript · Express · OpenWeatherMap API</p>
-                </article>
-
                 <article class="card card-soft">
                     <header>
                         <h3>More on GitHub →</h3>
                     </header>
-                    <p>Side projects, experiments, and things I'm actively tinkering with live on <a href="https://github.com/ibadamomin/" target="_blank" rel="noopener">github.com/ibadamomin</a>.</p>
+                    <p>Experiments and side-projects live at <a href="https://github.com/ibadamomin/" target="_blank" rel="noopener">github.com/ibadamomin</a>.</p>
                 </article>
             </div>
         </section>
@@ -162,10 +187,11 @@
             <div class="kitchen-grid">
                 <div>
                     <p>
-                        Cooking is my other build environment. It's the one hobby where I can iterate
-                        on a design, ship a result, and immediately get feedback — usually from whoever's
-                        at the table. I treat recipes the way I treat code: read the docs, prototype
-                        fast, then tune until it's <em>actually good</em>.
+                        Cooking is my other build environment. It's the hobby where I can
+                        design something, ship a result, and get honest feedback from
+                        whoever's at the table — usually within the hour. I treat recipes
+                        the way I treat code: read the docs, prototype fast, then tune
+                        until it's <em>actually good</em>.
                     </p>
                     <p>What I'm obsessed with right now:</p>
                     <ul class="kitchen-list">
@@ -176,21 +202,42 @@
                     </ul>
                 </div>
                 <blockquote class="pullquote">
-                    &ldquo;Good code and good food follow the same rules: respect your inputs,
-                    don't skip the prep, and taste as you go.&rdquo;
+                    &ldquo;Good code and good food follow the same rules:
+                    respect your inputs, don't skip the prep, and taste as you go.&rdquo;
                 </blockquote>
             </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <h2 class="section-heading">&gt; education</h2>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-head">
+                        <h3>M.S. in Artificial Intelligence · The University of Texas at Austin</h3>
+                        <span class="dates">Aug 2025 — May 2027</span>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-head">
+                        <h3>B.S. in Computer Science · The University of Texas at Dallas</h3>
+                        <span class="dates">Aug 2022 — May 2024</span>
+                    </div>
+                </li>
+            </ol>
         </section>
 
         <!-- CONTACT -->
         <section id="contact" class="section">
             <h2 class="section-heading">&gt; contact</h2>
-            <p class="contact-line">Got an idea, a role, or a recipe to share? I'd love to hear from you.</p>
+            <p class="contact-line">
+                Got an idea, a role, a pilot, or a recipe to share? I'd love to hear from you.
+            </p>
             <ul class="contact-links">
                 <li><a href="mailto:ibadalimomin@gmail.com">&gt; email</a></li>
                 <li><a href="https://www.linkedin.com/in/ibadmomin/" target="_blank" rel="noopener">&gt; linkedin</a></li>
                 <li><a href="https://github.com/ibadamomin/" target="_blank" rel="noopener">&gt; github</a></li>
-                <li><a href="/IbadMomin-Resume.pdf" download>&gt; resume (pdf)</a></li>
+                <li><a href="/Ibad_Momin_Resume_2026.pdf" download>&gt; resume (pdf)</a></li>
             </ul>
         </section>
 
