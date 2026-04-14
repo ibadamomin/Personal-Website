@@ -2,43 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects — Ibad Momin</title>
+    <title>projects — Ibad Momin</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/waveemoji.png">
 </head>
 <body>
-    <a class="back" href="index.html">&lt; back</a>
+    <header class="topbar">
+        <a href="index.html" class="brand">ibad<span class="brand-cursor"></span></a>
+        <nav class="topnav">
+            <a href="about.html">about</a>
+            <a href="experience.html">experience</a>
+            <a href="projects.html" class="is-active">projects</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
     <main class="page">
-        <h1 class="heading">Projects</h1>
+        <p class="crumb">$ ls projects/</p>
+        <h1 class="page-title">projects</h1>
 
-        <p class="body-text"><b>Fuelmarkt</b> <i class="dates">&middot; 2025</i></p>
-        <ul>
-            <li class="bullets">Fuel intelligence SaaS with an AI agent on the Anthropic API.</li>
-            <li class="bullets">Next.js, Node.js, PostgreSQL, hardware telemetry integrations.</li>
-        </ul>
+        <section class="cards">
+            <article class="card">
+                <header class="card-head">
+                    <h2 class="card-title">fuelmarkt</h2>
+                    <span class="card-year">2025</span>
+                </header>
+                <p class="card-body">fuel intelligence saas with an ai agent on the anthropic api.</p>
+                <p class="card-stack">next.js &middot; node &middot; postgres &middot; anthropic</p>
+            </article>
 
-        <p class="body-text next"><b>Cause Connect</b> <i class="dates">&middot; 2024</i></p>
-        <ul>
-            <li class="bullets">Platform linking UTD students with local non-profits and donors.</li>
-            <li class="bullets">React, Firebase, Node.js, Stripe.</li>
-        </ul>
+            <article class="card">
+                <header class="card-head">
+                    <h2 class="card-title">cause connect</h2>
+                    <span class="card-year">2024</span>
+                </header>
+                <p class="card-body">platform linking utd students with local non-profits and donors.</p>
+                <p class="card-stack">react &middot; firebase &middot; node &middot; stripe</p>
+            </article>
 
-        <p class="body-text next"><b>Degree Planner</b> <i class="dates">&middot; 2024</i></p>
-        <ul>
-            <li class="bullets">Interactive tool to visualize degree plans and progress.</li>
-            <li class="bullets">MySQL, Node.js, JavaScript.</li>
-        </ul>
+            <article class="card">
+                <header class="card-head">
+                    <h2 class="card-title">degree planner</h2>
+                    <span class="card-year">2024</span>
+                </header>
+                <p class="card-body">interactive tool to visualize degree plans and progress.</p>
+                <p class="card-stack">mysql &middot; node &middot; javascript</p>
+            </article>
 
-        <p class="body-text next"><b>Petgram</b> <i class="dates">&middot; 2023</i></p>
-        <ul>
-            <li class="bullets">iOS social app for pets &mdash; profiles and photo sharing.</li>
-            <li class="bullets">Swift, iOS. Led a team of 4.</li>
-        </ul>
+            <article class="card">
+                <header class="card-head">
+                    <h2 class="card-title">petgram</h2>
+                    <span class="card-year">2023</span>
+                </header>
+                <p class="card-body">ios social app for pets &mdash; profiles and photo sharing. led a team of 4.</p>
+                <p class="card-stack">swift &middot; ios</p>
+            </article>
+        </section>
 
-        <p class="body-text next"><a href="https://github.com/ibadamomin/" target="_blank" rel="noopener">&gt; more on github</a></p>
+        <p class="more"><a href="https://github.com/ibadamomin/" target="_blank" rel="noopener">&gt; more on github</a></p>
     </main>
+
     <footer class="copyright">&copy; Ibad Momin &mdash; 2026</footer>
 </body>
 </html>

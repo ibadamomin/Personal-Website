@@ -2,36 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience — Ibad Momin</title>
+    <title>experience — Ibad Momin</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/waveemoji.png">
 </head>
 <body>
-    <a class="back" href="index.html">&lt; back</a>
+    <header class="topbar">
+        <a href="index.html" class="brand">ibad<span class="brand-cursor"></span></a>
+        <nav class="topnav">
+            <a href="about.html">about</a>
+            <a href="experience.html" class="is-active">experience</a>
+            <a href="projects.html">projects</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
     <main class="page">
-        <h1 class="heading">Experience</h1>
+        <p class="crumb">$ cat experience.md</p>
+        <h1 class="page-title">experience</h1>
 
-        <p class="body-text"><b>Software Engineer II</b> &mdash; Dell Technologies <i class="dates">&middot; Jan 2025 &ndash; Present</i></p>
-        <ul>
-            <li class="bullets">Built a Python Slack bot adopted by 800+ engineers for structured bug reporting.</li>
-            <li class="bullets">Modernized PowerStore test suites into a CLI + Docker stack.</li>
-            <li class="bullets">Led migration of test infrastructure from Jenkins to Dell&rsquo;s internal CI platform.</li>
-        </ul>
+        <ol class="timeline">
+            <li class="tl-item">
+                <div class="tl-head">
+                    <h2 class="tl-role">software engineer II</h2>
+                    <span class="tl-company">dell technologies</span>
+                </div>
+                <p class="tl-dates">jan 2025 &mdash; present</p>
+                <ul class="tl-list">
+                    <li>built a python slack bot adopted by 800+ engineers for structured bug reporting.</li>
+                    <li>modernized powerstore test suites into a cli + docker stack.</li>
+                    <li>led migration of test infra from jenkins to dell&rsquo;s internal ci platform.</li>
+                </ul>
+            </li>
 
-        <p class="body-text next"><b>Software Engineer I</b> &mdash; Dell Technologies <i class="dates">&middot; Jul 2024 &ndash; Jan 2025</i></p>
-        <ul>
-            <li class="bullets">Rebuilt Jenkins CI/CD pipelines, saving 2&ndash;6 hrs/day of manual testing for 200+ engineers.</li>
-        </ul>
+            <li class="tl-item">
+                <div class="tl-head">
+                    <h2 class="tl-role">founder &amp; engineer</h2>
+                    <span class="tl-company">fuelmarkt</span>
+                </div>
+                <p class="tl-dates">jan 2025 &mdash; present</p>
+                <ul class="tl-list">
+                    <li>fuel intelligence saas for gas station operators.</li>
+                    <li>next.js, node, postgres, anthropic api, veeder-root integrations.</li>
+                    <li>onboarding first pilot customers.</li>
+                </ul>
+            </li>
 
-        <p class="body-text next"><b>Founder &amp; Engineer</b> &mdash; Fuelmarkt <i class="dates">&middot; Jan 2025 &ndash; Present</i></p>
-        <ul>
-            <li class="bullets">Fuel intelligence SaaS for gas station operators &mdash; real-time tank data and an AI agent for purchase orders.</li>
-            <li class="bullets">Next.js, Node, PostgreSQL, Anthropic API, Veeder-Root &amp; OptConnect integrations.</li>
-            <li class="bullets">Onboarding first pilot customers.</li>
-        </ul>
+            <li class="tl-item">
+                <div class="tl-head">
+                    <h2 class="tl-role">software engineer I</h2>
+                    <span class="tl-company">dell technologies</span>
+                </div>
+                <p class="tl-dates">jul 2024 &mdash; jan 2025</p>
+                <ul class="tl-list">
+                    <li>rebuilt jenkins ci/cd pipelines, saving 2&ndash;6 hrs/day of manual testing for 200+ engineers.</li>
+                </ul>
+            </li>
+        </ol>
     </main>
+
     <footer class="copyright">&copy; Ibad Momin &mdash; 2026</footer>
 </body>
 </html>

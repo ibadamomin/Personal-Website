@@ -2,25 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — Ibad Momin</title>
+    <title>about — Ibad Momin</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/waveemoji.png">
 </head>
 <body>
-    <a class="back" href="index.html">&lt; back</a>
-    <main class="page">
-        <h1 class="heading">About</h1>
-        <p class="body-text">Software engineer based in Austin, TX.</p>
-        <p class="body-text">Currently building developer tools at <i>Dell Technologies</i> and a fuel intelligence SaaS called <i>Fuelmarkt</i>.</p>
-        <p class="body-text">Pursuing an M.S. in Artificial Intelligence at <i>UT Austin</i>.</p>
-        <p class="body-text">Off the keyboard: cooking, mostly South Asian and low-and-slow.</p>
+    <header class="topbar">
+        <a href="index.html" class="brand">ibad<span class="brand-cursor"></span></a>
+        <nav class="topnav">
+            <a href="about.html" class="is-active">about</a>
+            <a href="experience.html">experience</a>
+            <a href="projects.html">projects</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
 
-        <h2 class="sub-heading">Education</h2>
-        <p class="body-text">M.S. Artificial Intelligence &mdash; <i>UT Austin, 2025&ndash;2027</i></p>
-        <p class="body-text">B.S. Computer Science &mdash; <i>UT Dallas, 2024</i></p>
+    <main class="page">
+        <p class="crumb">$ cat about.md</p>
+        <h1 class="page-title">about</h1>
+
+        <section class="prose">
+            <p>software engineer based in austin, tx.</p>
+            <p>building developer tools at <span class="hl">dell technologies</span> and a fuel intelligence saas called <span class="hl">fuelmarkt</span>.</p>
+            <p>pursuing an m.s. in artificial intelligence at <span class="hl">ut austin</span>.</p>
+            <p>off the keyboard &mdash; cooking, mostly south asian and low-and-slow.</p>
+        </section>
+
+        <section class="stat-grid">
+            <div class="stat">
+                <p class="stat-label">based in</p>
+                <p class="stat-value">austin, tx</p>
+            </div>
+            <div class="stat">
+                <p class="stat-label">currently</p>
+                <p class="stat-value">dell &middot; fuelmarkt</p>
+            </div>
+            <div class="stat">
+                <p class="stat-label">studying</p>
+                <p class="stat-value">m.s. ai &middot; ut austin</p>
+            </div>
+        </section>
     </main>
+
     <footer class="copyright">&copy; Ibad Momin &mdash; 2026</footer>
 </body>
 </html>

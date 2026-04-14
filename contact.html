@@ -2,21 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact — Ibad Momin</title>
+    <title>contact — Ibad Momin</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/waveemoji.png">
 </head>
 <body>
-    <a class="back" href="index.html">&lt; back</a>
+    <header class="topbar">
+        <a href="index.html" class="brand">ibad<span class="brand-cursor"></span></a>
+        <nav class="topnav">
+            <a href="about.html">about</a>
+            <a href="experience.html">experience</a>
+            <a href="projects.html">projects</a>
+            <a href="contact.html" class="is-active">contact</a>
+        </nav>
+    </header>
+
     <main class="page">
-        <h1 class="heading">Contact</h1>
-        <p><a class="contact-me" href="mailto:ibadalimomin@gmail.com">&gt; Email</a></p>
-        <p><a class="contact-me" href="https://www.linkedin.com/in/ibadmomin/" target="_blank" rel="noopener">&gt; LinkedIn</a></p>
-        <p><a class="contact-me" href="https://github.com/ibadamomin/" target="_blank" rel="noopener">&gt; GitHub</a></p>
-        <p><a class="contact-me" href="/Ibad_Momin_Resume_2026.pdf" download>&gt; Download Resume</a></p>
+        <p class="crumb">$ ./contact.sh</p>
+        <h1 class="page-title">contact</h1>
+
+        <p class="prose">drop a line &mdash; ideas, roles, pilots, or recipes.</p>
+
+        <ul class="contact-list">
+            <li><a href="mailto:ibadalimomin@gmail.com"><span class="arrow">&gt;</span> email</a></li>
+            <li><a href="https://www.linkedin.com/in/ibadmomin/" target="_blank" rel="noopener"><span class="arrow">&gt;</span> linkedin</a></li>
+            <li><a href="https://github.com/ibadamomin/" target="_blank" rel="noopener"><span class="arrow">&gt;</span> github</a></li>
+            <li><a href="/Ibad_Momin_Resume_2026.pdf" download><span class="arrow">&gt;</span> resume (pdf)</a></li>
+        </ul>
     </main>
+
     <footer class="copyright">&copy; Ibad Momin &mdash; 2026</footer>
 </body>
 </html>
