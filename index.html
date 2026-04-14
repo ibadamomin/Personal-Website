@@ -4,15 +4,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibad Momin</title>
+    <meta name="description" content="Ibad Momin — Software engineer, builder, entrepreneur, and home cook based in Texas.">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Ibad Momin — Software Engineer & Builder</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/waveemoji.png">
 </head>
 <body>
-    <h1 class="line typewriter-anim">Hello, my name is Ibad.</h1>
-    <h2 class="welcome subheading">Welcome to my website!</h2>
-    <p class="sub education"><a class="sub" href="education.html">> Education</a></p>
-    <p class="sub projects"><a class="sub" href="projects.html">> Projects</a></p>
-    <p class="sub contact"><a class="sub" href="contact.html">> Contact</a></p> 
+    <nav class="nav">
+        <a href="#top" class="nav-logo">ibad<span class="cursor-dot"></span></a>
+        <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#kitchen">kitchen</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="top">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-inner">
+                <p class="prompt">~/ibadmomin <span class="blink">$</span></p>
+                <h1 class="line typewriter-anim">Hello, my name is Ibad.</h1>
+                <h2 class="subheading">Software engineer. Builder. Entrepreneur. Home cook.</h2>
+                <p class="hero-tag">Shipping products, cooking up ideas — and dinner.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn">View projects</a>
+                    <a href="/IbadMomin-Resume.pdf" class="btn btn-ghost" download>Download resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h2 class="section-heading">&gt; about</h2>
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>
+                        I'm a CS grad from <strong>The University of Texas at Dallas</strong>
+                        who likes turning rough ideas into working things — web apps,
+                        cloud tooling, side projects, and the occasional 12-hour braise.
+                    </p>
+                    <p>
+                        Most recently I was a <strong>Software Engineering Intern at Dell Technologies</strong>,
+                        building cloud-deployment tooling on top of Kubernetes. On the side I'm
+                        building <strong>Cause Connect</strong>, a platform that links 20K+ students
+                        and faculty with nearby non-profits and volunteering opportunities.
+                    </p>
+                    <p>
+                        When I'm not writing code I'm usually in the kitchen — South Asian classics,
+                        slow-cooked meats, and whatever recipe I'm currently obsessed with.
+                    </p>
+                </div>
+                <aside class="stack">
+                    <h3>stack</h3>
+                    <p><span class="muted">languages:</span> Python, Java, C/C++, JavaScript, SQL, Swift</p>
+                    <p><span class="muted">web:</span> React, Next.js, Node.js, Express, Firebase</p>
+                    <p><span class="muted">cloud &amp; infra:</span> AWS, GCP, Docker, Kubernetes, Terraform</p>
+                    <p><span class="muted">data:</span> PostgreSQL, MySQL, MongoDB, RabbitMQ</p>
+                    <p><span class="muted">kitchen:</span> cast iron, dutch oven, too many spices</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section">
+            <h2 class="section-heading">&gt; experience</h2>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-head">
+                        <h3>Software Engineering Intern · Dell Technologies</h3>
+                        <span class="dates">May 2023 — Aug 2024 · Round Rock, TX</span>
+                    </div>
+                    <ul>
+                        <li>Shipped cloud-deployment tooling that let clients deploy apps to public and private clouds from a single UI — cut deployment time by 25% and lifted customer satisfaction 12%.</li>
+                        <li>Containerized and orchestrated PostgreSQL and RabbitMQ with Docker and Kubernetes to improve availability.</li>
+                        <li>Researched a $100M startup's stack to design the right deployment pattern on Dell infrastructure.</li>
+                    </ul>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-head">
+                        <h3>Development Officer · UTD Artificial Intelligence Society</h3>
+                        <span class="dates">Aug 2022 — May 2024 · UT Dallas</span>
+                    </div>
+                    <ul>
+                        <li>Designed and built the AIS website in Next.js.</li>
+                        <li>Built a Coda-powered QR check-in system for <strong>HackAI 2023</strong> (500+ attendees).</li>
+                        <li>Helped run the hackathon end-to-end — logistics, workshops, and $5K in sponsorships raised.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <h2 class="section-heading">&gt; projects</h2>
+            <div class="cards">
+                <article class="card">
+                    <header>
+                        <h3>Cause Connect</h3>
+                        <span class="dates">2024 — present</span>
+                    </header>
+                    <p>Web platform linking 20K+ UTD students and faculty with nearby non-profits, donors, and volunteering opportunities. Built-in Stripe donation flow.</p>
+                    <p class="tags">React · Firebase · Node.js · Stripe · Figma</p>
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h3>Degree Planner</h3>
+                        <span class="dates">2024 — present</span>
+                    </header>
+                    <p>Interactive planner that helps students map out their degree — visualize required courses, semester plans, and progress with charting libraries over a MySQL backend.</p>
+                    <p class="tags">MySQL · Node.js · JavaScript · Git</p>
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h3>Petgram</h3>
+                        <span class="dates">Spring 2023</span>
+                    </header>
+                    <p>iOS social app for pets — profiles and photo/video sharing. Led a team of 4 through design, build, and delivery.</p>
+                    <p class="tags">Swift · iOS</p>
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h3>Daily Journal</h3>
+                        <span class="dates">Spring 2022</span>
+                    </header>
+                    <p>Personal blogging app with full CRUD — write, edit, and browse entries, backed by MongoDB.</p>
+                    <p class="tags">Node.js · Express · MongoDB · EJS · Bootstrap</p>
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h3>Weather App</h3>
+                        <span class="dates">Fall 2021</span>
+                    </header>
+                    <p>Type in a city, get the current weather. Consumes the OpenWeatherMap API over an Express backend.</p>
+                    <p class="tags">JavaScript · Express · OpenWeatherMap API</p>
+                </article>
+
+                <article class="card card-soft">
+                    <header>
+                        <h3>More on GitHub →</h3>
+                    </header>
+                    <p>Side projects, experiments, and things I'm actively tinkering with live on <a href="https://github.com/ibadamomin/" target="_blank" rel="noopener">github.com/ibadamomin</a>.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- KITCHEN -->
+        <section id="kitchen" class="section">
+            <h2 class="section-heading">&gt; kitchen</h2>
+            <div class="kitchen-grid">
+                <div>
+                    <p>
+                        Cooking is my other build environment. It's the one hobby where I can iterate
+                        on a design, ship a result, and immediately get feedback — usually from whoever's
+                        at the table. I treat recipes the way I treat code: read the docs, prototype
+                        fast, then tune until it's <em>actually good</em>.
+                    </p>
+                    <p>What I'm obsessed with right now:</p>
+                    <ul class="kitchen-list">
+                        <li>→ <strong>South Asian classics</strong> — biryani, nihari, haleem, karahi.</li>
+                        <li>→ <strong>Low-and-slow</strong> — brisket, short ribs, overnight stocks.</li>
+                        <li>→ <strong>Bread</strong> — sourdough, naan, and anything that needs a proof.</li>
+                        <li>→ <strong>Spice blends</strong> — toasting and grinding my own masalas.</li>
+                    </ul>
+                </div>
+                <blockquote class="pullquote">
+                    &ldquo;Good code and good food follow the same rules: respect your inputs,
+                    don't skip the prep, and taste as you go.&rdquo;
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2 class="section-heading">&gt; contact</h2>
+            <p class="contact-line">Got an idea, a role, or a recipe to share? I'd love to hear from you.</p>
+            <ul class="contact-links">
+                <li><a href="mailto:ibadalimomin@gmail.com">&gt; email</a></li>
+                <li><a href="https://www.linkedin.com/in/ibadmomin/" target="_blank" rel="noopener">&gt; linkedin</a></li>
+                <li><a href="https://github.com/ibadamomin/" target="_blank" rel="noopener">&gt; github</a></li>
+                <li><a href="/IbadMomin-Resume.pdf" download>&gt; resume (pdf)</a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>built &amp; maintained by ibad · <span id="year"></span></p>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
